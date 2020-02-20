@@ -1,0 +1,412 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header {
+    display: grid;
+    padding: 30px;
+    height: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    outline: 1px solid #000;
+}
+
+.logo {
+    background-image: url(./img/Logo.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.header_menu {
+    display: grid;
+    padding: 10px;
+    grid-gap: 10px;
+    grid-template-areas:
+    "menu . social"
+}
+
+.menu {
+    grid-area: menu;
+    display: grid;
+    padding: 15px;
+    grid-template-columns: repeat(6, 1fr);
+    outline: 1px solid #000;
+}
+
+.social {
+    grid-area: social;
+    display: grid;
+    padding: 15px;
+    grid-template-columns: repeat(5, 1fr);
+    outline: 1px solid #000;
+    text-align: center;
+}
+
+.topbaner {
+    display: grid;
+    padding: 20px;
+    grid-gap: 10px;
+    height: 600px;
+    background-image: url(./img/Layer\ 10.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    grid-template-columns: 1fr 500px 500px 1fr;
+    grid-template-areas:
+    ". toptext1 toptext2 ."
+
+}
+
+.toptext1 {
+    grid-area: toptext1;
+    padding-top: 100px;
+    text-align: center;
+
+}
+
+.toptext2 {
+    grid-area: toptext2;
+}
+
+.topcube {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    outline: 1px solid #000;
+}
+
+.choose {
+    display: grid;
+    padding: 10px;
+    height: 200px;
+    grid-template-columns: 1fr 500px 1fr;
+    grid-template-areas:
+    ". choose2 ."
+}
+
+.choose2 {
+    padding-top: 50px;
+    text-align: center;
+    outline: 1px solid #000;
+}
+
+.prof {
+    display: grid;
+    padding: 10px;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 320px 400px 320px 1fr;
+    grid-template-areas:
+    ". prof1 prof2 prof3 ."
+    ". prof4 prof2 prof5 ."
+}
+
+.prof1 {
+    grid-area: prof1;
+    text-align: center;
+    outline: 1px solid #000;
+}
+
+.prof2 {
+    grid-area: prof2;
+    display:block;
+    margin:auto;
+}
+
+.prof3 {
+    grid-area: prof3;
+    text-align: center;
+    outline: 1px solid #000;
+}
+
+.prof4 {
+    grid-area: prof4;
+    text-align: center;
+    outline: 1px solid #000;
+}
+
+.prof5 {
+    grid-area: prof5;
+    text-align: center;
+    outline: 1px solid #000;
+}
+
+.midcube {
+    display: grid;
+    padding: 10px;
+    grid-gap: 10px;
+    height: 400px;
+    background-image: url(./img/Layer\ 9.png);
+    background-position: right;
+    background-size: 100%;
+    grid-template-columns: 1fr 250px 250px 250px 250px 1fr;
+    grid-template-areas:
+    ". midcube1 midcube2 midcube3 midcube4 ."
+}
+
+.midcube1 {
+    padding-top: 100px;
+    grid-area: midcube1;
+    text-align: center;
+}
+
+.midcube2 {
+    padding-top: 100px;
+    grid-area: midcube2;
+    text-align: center;
+}
+
+.midcube3 {
+    padding-top: 100px;
+    grid-area: midcube3;
+    text-align: center;
+}
+
+.midcube4 {
+    padding-top: 100px;
+    grid-area: midcube4;
+    text-align: center;
+}
+
+.works {
+    display: grid;
+    padding: 10px;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 350px 350px 350px 1fr;
+    grid-template-areas:
+    ". works1 works1 works2 ."
+    ". works3 works4 works5 ."
+    ". works6 works6 . ."
+}
+
+.works1 {
+    grid-area: works1;
+    text-align: center;
+    outline: 1px solid #000;
+}
+
+.works2 {
+    grid-area: works2;
+    text-align: center;
+    outline: 1px solid #000;
+}
+
+.works3 {
+    grid-area: works3;
+    text-align: center;
+    outline: 1px solid #000;
+}
+
+.works4 {
+    grid-area: works4;
+    text-align: center;
+    outline: 1px solid #000;
+}
+
+.works5 {
+    grid-area: works5;
+    text-align: center;
+    outline: 1px solid #000;
+}
+
+.works6 {
+    grid-area: works6;
+    text-align: center;
+    outline: 1px solid #000;
+}
+
+.gallery {
+    display: grid;
+    padding: 10px;
+    grid-gap: 20px;
+    height: 600px;
+    background-image: url(./img/Layer\ 3.png);
+    background-position: bottom;
+    background-size: 100%;
+    grid-template-columns: 1fr 300px 300px 300px 1fr;
+    grid-template-rows: 100px 200px 200px;
+    grid-template-areas:
+    ". gallery1 gallery1 gallery1 ."
+    ". gallery2 gallery3 gallery4 ."
+    ". gallery5 gallery6 gallery7 . "
+}
+
+.gallery1 {
+    grid-area: gallery1;
+    text-align: center;
+    padding: 10px;
+}
+
+.gallery2 {
+    grid-area: gallery2;
+    background-image: url(./img/gal1.png);
+    background-position: bottom;
+
+}
+
+.gallery3 {
+    grid-area: gallery3;
+    background-image: url(./img/gal2.png);
+    background-position: bottom;
+}
+
+.gallery4 {
+    grid-area: gallery4;
+    background-image: url(./img/gal3.png);
+    background-position: bottom;
+}
+
+.gallery5 {
+    grid-area: gallery5;
+    background-image: url(./img/gal4.png);
+    background-position: bottom;
+}
+
+.gallery6 {
+    grid-area: gallery6;
+    background-image: url(./img/gal5.png);
+    background-position: bottom;
+}
+
+.gallery7 {
+    grid-area: gallery7;
+    background-image: url(./img/gal6.png);
+    background-position: bottom;
+}
+
+.team {
+    display: grid;
+    padding: 10px;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 250px 250px 250px 250px 1fr;
+    grid-template-rows: 100px 400px;
+    grid-template-areas:
+    ". team1 team1 team1 team1 ."
+    ". team2 team3 team4 team5 ."
+}
+
+.team1 {
+    grid-area: team1;
+    outline: 1px solid #000;
+    text-align: center;
+}
+
+.team2 {
+    grid-area: team2;
+    outline: 1px solid #000;
+    background-image: url(./img/Layer7.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.team3 {
+    grid-area: team3;
+    outline: 1px solid #000;
+    background-image: url(./img/Layer4.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.team4 {
+    grid-area: team4;
+    outline: 1px solid #000;
+    background-image: url(./img/Layer6.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.team5 {
+    grid-area: team5;
+    outline: 1px solid #000;
+    background-image: url(./img/Layer5.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.teamtext {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
+
+.offer {
+    display: grid;
+    width: 100%;
+    height: 180px;
+    background-color: #e2e2e2;
+    grid-template-columns: 1fr 600px 100px 1fr;
+    grid-template-areas:
+    ". offer1 offer2 ."
+}
+
+.offer1 {
+    grid-area: offer1;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.offer2 {
+    grid-area: offer2;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.footer {
+    display: grid;
+    width: 100%;
+    height: 400px;
+    background-color: #171717;
+    grid-template-columns: 1fr 350px 250px 250px 250px 1fr;
+    grid-template-areas:
+    ". footer1 footer2 footer3 footer4 ."
+
+}
+
+.footer1 {
+    grid-area: footer1;
+    padding-top: 50px;
+    color: #777777;
+    text-align: left;
+}
+
+.footer2 {
+    grid-area: footer2;
+    padding-top: 50px;
+    color: #777777;
+    text-align: left;
+}
+
+.footer3 {
+    grid-area: footer3;
+    padding-top: 50px;
+    color: #777777;
+    text-align: left;
+}
+
+.footer4 {
+    grid-area: footer4;
+    padding-top: 50px;
+    color: #777777;
+    text-align: left;
+}
+
+.copy {
+    width: 100%;
+    height: 100px;
+    background-color: #1a1a1a;
+    text-align: center;
+}
+
+.copy1 {
+    padding-top: 30px;
+    color: #777777;
+}
