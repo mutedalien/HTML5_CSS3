@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  width: 1600px;
+  width: 1200px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -10,15 +10,27 @@ body {
 .header {
     display: grid;
     padding: 30px;
-    height: 30px;
+    height: 40px;
     grid-template-columns: repeat(4, 1fr);
-    text-align: center;
-    outline: 1px solid #000;
+    color: #6a6a6a;
+    font-size: 15px;
+    font-weight: 400;
+    font-weight: 700;
+}
+
+.header p {
+    padding-left: 60px;
+    margin: 6px;
 }
 
 .logo {
     background-image: url(./img/Logo.png);
     background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.worktime, .mailus, .callus {
+    background-image: url("./img/Ellipse_1_copy_8.png");
     background-repeat: no-repeat;
 }
 
@@ -35,37 +47,67 @@ body {
     display: grid;
     padding: 15px;
     grid-template-columns: repeat(6, 1fr);
-    outline: 1px solid #000;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #6c6c6c;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.menu-link:hover {
+    color: #262626;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.menu-link-active {
+    ccolor: #262626;
+    font-size: 20px;
+    font-weight: 400;
+    font-weight: bold;
 }
 
 .social {
     grid-area: social;
     display: grid;
     padding: 15px;
-    grid-template-columns: repeat(5, 1fr);
-    outline: 1px solid #000;
     text-align: center;
+    background-image: url("./img/sociallinks.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 10px;
+
 }
 
 .topbaner {
     display: grid;
     padding: 20px;
     grid-gap: 10px;
-    height: 600px;
-    background-image: url(./img/Layer\ 10.png);
+    height: 425px;
+    background-image: url(./img/Layer10.png);
     background-size: 100%;
     background-repeat: no-repeat;
     grid-template-columns: 1fr 500px 500px 1fr;
     grid-template-areas:
     ". toptext1 toptext2 ."
-
 }
 
 .toptext1 {
     grid-area: toptext1;
     padding-top: 100px;
     text-align: center;
+    color: #3f3f3f;
+    font-size: 17px;
+    font-weight: 400;
+}
 
+.wehave {
+    color: #474747;
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing: -1.19px;
 }
 
 .toptext2 {
@@ -74,30 +116,73 @@ body {
 
 .topcube {
     display: grid;
-    padding: 20px;
     grid-template-columns: repeat(4, 1fr);
     text-align: center;
-    outline: 1px solid #000;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.cube1 {
+    padding-top: 77px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #43b1d2;
+}
+
+.cube2 {
+    padding-top: 77px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #3fb6c6;
+}
+
+.cube3 {
+    padding-top: 77px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #3cbbbb;
+}
+
+.cube4 {
+    padding-top: 77px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #37c3a8;
+}
+
+.textcubebig {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
 }
 
 .choose {
     display: grid;
-    padding: 10px;
     height: 200px;
-    grid-template-columns: 1fr 500px 1fr;
+    color: #6a6a6a;
+    font-size: 16px;
+    font-weight: 400;
     grid-template-areas:
     ". choose2 ."
 }
 
+.shoosebig {
+    color: #494949;
+    font-size: 45px;
+    font-weight: 700;
+}
+
 .choose2 {
-    padding-top: 50px;
     text-align: center;
-    outline: 1px solid #000;
 }
 
 .prof {
     display: grid;
-    padding: 10px;
     grid-gap: 10px;
     grid-template-columns: 1fr 320px 400px 320px 1fr;
     grid-template-areas:
@@ -105,47 +190,59 @@ body {
     ". prof4 prof2 prof5 ."
 }
 
+.profbig {
+    padding-top: 20%;
+    color: #6f6f6e;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.prof1, .prof2, .prof3, .prof4, .prof5 {
+    color: #6a6a6a;
+    font-size: 16px;
+    font-weight: 400;
+}
+
 .prof1 {
     grid-area: prof1;
     text-align: center;
-    outline: 1px solid #000;
 }
 
 .prof2 {
     grid-area: prof2;
-    display:block;
     margin:auto;
 }
 
 .prof3 {
     grid-area: prof3;
     text-align: center;
-    outline: 1px solid #000;
 }
 
 .prof4 {
     grid-area: prof4;
     text-align: center;
-    outline: 1px solid #000;
 }
 
 .prof5 {
     grid-area: prof5;
     text-align: center;
-    outline: 1px solid #000;
 }
 
 .midcube {
     display: grid;
     padding: 10px;
     grid-gap: 10px;
-    height: 400px;
-    background-image: url(./img/Layer\ 9.png);
+    height: 500px;
+    background-image: url(./img/Layer9.png);
     background-position: right;
     background-size: 100%;
     grid-template-columns: 1fr 250px 250px 250px 250px 1fr;
     grid-template-areas:
     ". midcube1 midcube2 midcube3 midcube4 ."
+}
+
+.midcubimg {
+    height: 80px;
 }
 
 .midcube1 {
@@ -172,6 +269,21 @@ body {
     text-align: center;
 }
 
+.midcubebig {
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 400;
+    margin: 20px;
+    letter-spacing: 2px;
+    border-bottom: 5px solid #ffffff;
+}
+
+.midcubesmall {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 500;
+}
+
 .works {
     display: grid;
     padding: 10px;
@@ -183,59 +295,146 @@ body {
     ". works6 works6 . ."
 }
 
+.worksbig {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #494949;
+    font-size: 45px;
+    font-weight: 700;
+}
+
 .works1 {
     grid-area: works1;
-    text-align: center;
-    outline: 1px solid #000;
+    color: #6a6a6a;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .works2 {
     grid-area: works2;
-    text-align: center;
-    outline: 1px solid #000;
+    color: #6a6a6a;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .works3 {
     grid-area: works3;
-    text-align: center;
-    outline: 1px solid #000;
+    color: #6a6a6a;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .works4 {
     grid-area: works4;
-    text-align: center;
-    outline: 1px solid #000;
+    color: #6a6a6a;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .works5 {
     grid-area: works5;
-    text-align: center;
-    outline: 1px solid #000;
+    color: #6a6a6a;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .works6 {
     grid-area: works6;
     text-align: center;
-    outline: 1px solid #000;
+}
+
+.date {
+    color: #0087be;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.button {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+    border-radius: 23px;
+    background-color: #1a9bdc;
+    width: 212px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 3.6px;
+}
+
+.button2 {
+    background-image: url("./img/Ellipse_2.png");
+    background-repeat: no-repeat;
+    background-position: 2.5px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+    border-radius: 23px;
+    background-color: #1a9bdc;
+    width: 350px;
+    height: 45px;
+    line-height: 45px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.button3 {
+    background-image: url("./img/Ellipse_2.png");
+    background-repeat: no-repeat;
+    background-position: 2.5px;
+    text-align: center;
+    color: #494949;
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+    border-radius: 23px;
+    background-color: #e2e2e2;
+    width: 350px;
+    height: 45px;
+    line-height: 45px;
+    display: inline-block;
+    text-decoration: none;
 }
 
 .gallery {
+    margin-top: 50px;
     display: grid;
-    padding: 10px;
+    padding: 20px;
     grid-gap: 20px;
     height: 600px;
-    background-image: url(./img/Layer\ 3.png);
+    background-image: url(./img/Layer3.png);
     background-position: bottom;
     background-size: 100%;
     grid-template-columns: 1fr 300px 300px 300px 1fr;
-    grid-template-rows: 100px 200px 200px;
+    grid-template-rows: 130px 200px 200px;
     grid-template-areas:
     ". gallery1 gallery1 gallery1 ."
     ". gallery2 gallery3 gallery4 ."
     ". gallery5 gallery6 gallery7 . "
 }
 
+.gallerybig {
+    margin: 0px;
+    color: #ffffff;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.gallerysmall {
+    margin: 20px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
 .gallery1 {
+    margin: 10px;
     grid-area: gallery1;
     text-align: center;
     padding: 10px;
@@ -282,22 +481,43 @@ body {
     display: grid;
     padding: 10px;
     grid-gap: 20px;
+    color: #6a6a6a;
+    font-size: 16px;
+    font-weight: 400;
     grid-template-columns: 1fr 250px 250px 250px 250px 1fr;
-    grid-template-rows: 100px 400px;
+    grid-template-rows: 200px 420px;
     grid-template-areas:
     ". team1 team1 team1 team1 ."
     ". team2 team3 team4 team5 ."
 }
 
+.names {
+    color: #6f6f6e;
+    font-size: 25px;
+    font-weight: 500;
+    font-weight: bold;
+}
+
+.profi {
+    color: #6f6f6e;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.links {
+    color: #0087be;
+    font-size: 25px;
+    font-weight: 400;
+    font-weight: bold;
+}
+
 .team1 {
     grid-area: team1;
-    outline: 1px solid #000;
     text-align: center;
 }
 
 .team2 {
     grid-area: team2;
-    outline: 1px solid #000;
     background-image: url(./img/Layer7.png);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -306,7 +526,6 @@ body {
 
 .team3 {
     grid-area: team3;
-    outline: 1px solid #000;
     background-image: url(./img/Layer4.png);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -315,7 +534,6 @@ body {
 
 .team4 {
     grid-area: team4;
-    outline: 1px solid #000;
     background-image: url(./img/Layer6.png);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -324,7 +542,6 @@ body {
 
 .team5 {
     grid-area: team5;
-    outline: 1px solid #000;
     background-image: url(./img/Layer5.png);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -343,21 +560,28 @@ body {
     width: 100%;
     height: 180px;
     background-color: #e2e2e2;
-    grid-template-columns: 1fr 600px 100px 1fr;
+    grid-template-columns: 1fr 850px 200px 1fr;
     grid-template-areas:
     ". offer1 offer2 ."
 }
 
 .offer1 {
     grid-area: offer1;
-    padding-top: 50px;
+    padding-top: 60px;
     text-align: center;
 }
 
 .offer2 {
     grid-area: offer2;
-    padding-top: 50px;
+    padding-top: 60px;
     text-align: center;
+}
+
+.newpatient {
+    margin: 5px 10px;
+    color: #494949;
+    font-size: 30px;
+    font-weight: 700;
 }
 
 .footer {
@@ -376,6 +600,22 @@ body {
     padding-top: 50px;
     color: #777777;
     text-align: left;
+}
+
+.footerbig {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.mail img, .mobile img, .adress img {
+    margin-right: 30px;
+}
+
+ul li {
+    list-style: none;
+    background: url(./img/arrow.png) no-repeat left 50%;
+    padding-left: 25px;
 }
 
 .footer2 {
@@ -397,6 +637,26 @@ body {
     padding-top: 50px;
     color: #777777;
     text-align: left;
+}
+
+input {
+    color: #fff;
+    outline: none;
+    border: 0;
+    margin-bottom: 10px;
+    background: transparent;
+    border-bottom: 1px solid rgba(194, 194, 194, 0.42);
+    width: 100%;
+}
+
+textarea {
+    color: #fff;
+    outline: none;
+    border: 0;
+    margin-bottom: 10px;
+    background: transparent;
+    border-bottom: 1px solid rgba(194, 194, 194, 0.42);
+    width: 100%;
 }
 
 .copy {
